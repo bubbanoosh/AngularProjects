@@ -1,0 +1,32 @@
+<div class="row">
+<p>
+  <label>Username: </label>
+  <input
+    type="text"
+    [(ngModel)]="userName" (input)="onInputShouldDisableButton($event)">
+  <button class="btn btn-primary" [disabled]="disableTheButton" (click)="clearTheUserName($event)">Clear the username</button>
+
+  <button
+    class="btn btn-primary"
+    [disabled]="userName === ''"
+    (click)="userName = ''">Reset with inline expression in button</button>
+
+
+</p>
+<p>In this assignment:</p>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <p>
+      The username is {{ userName }}
+    </p>
+  </div>
+  <div class="col-xs-6">
+    <ol>
+      <li>Add an input field which updates a property ('userName') via Two-way binding</li>
+      <li>Output the userName property via String interpolation in a paragraph</li>
+      <li>Add a button which may be clicked only if the userName is NOT an empty string</li>
+      <li>Upon clicking the button, the userName should be reset to an empty string</li>
+    </ol>
+  </div>
+</div>
