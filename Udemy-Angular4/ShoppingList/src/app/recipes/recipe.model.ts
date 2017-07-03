@@ -1,5 +1,5 @@
 export class Recipe {
-  public name: string;
+  /*public name: string;
   public description: string;
   public imagePath: string;
 
@@ -7,7 +7,8 @@ export class Recipe {
     this.name = name;
     this.description = description;
     this.imagePath = imagePath;
-  }
-}/**
- * Created by Errol on 23/06/2017.
- */
+  }*/
+
+  constructor(public name: string, public description: string, public imagePath: string) { }
+
+}
