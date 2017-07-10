@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <!--<div class="panel-heading">{{srvElement.name}}</div>-->
+  <div class="panel-heading" #heading>{{theName}}</div>
+  <div class="panel-body">
+      <!--<strong *ngIf="srvElement.name === 'server'" style="color: red;">{{srvElement.content}}</strong>
+      <em *ngIf="srvElement.name === 'blueprint'">{{srvElement.content}}</em>-->
+      <ng-content></ng-content>
+  </div>
+</div>
