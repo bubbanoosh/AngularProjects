@@ -1,0 +1,10 @@
+Don’t upgrade Angular CLI. Remove it and reinstall.
+
+ng uninstall @angular/cli -g
+ng cache clean
+ng install @angular/cli -g
+
+After that. generate new project:
+ng new hello-cli
+
+Finally, copy your existing app code (your app dir, styles, and resources) into this new project.
